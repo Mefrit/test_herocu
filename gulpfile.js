@@ -1,16 +1,21 @@
-var typescript = require("gulp-tsc"),
-    gulp = require("gulp"),
+const series = require("gulp"),
     watch = require("gulp-watch"),
     less = require("gulp-less"),
     path = require("path");
 
+const gulp = require("gulp");
+
+const ts = require("gulp-typescript");
+
+const tsProject = ts.createProject("./tsconfig.json");
+
 gulp.task("tsc", function () {
-    gulp.src(["src/script/**/*.ts"]).pipe(typescript()).pipe(gulp.dest("public/js"));
+    return gulp.src(["./src/script/**/*.ts"]).pipe(ts()).pipe(gulp.dest("public/js"));
 });
 
 gulp.task("less", function () {
     return gulp
-        .src("./src/less/*.less")
+        .src("./src/style/**/*.less")
         .pipe(
             less({
                 paths: [path.join(__dirname, "less", "includes")],
@@ -20,11 +25,7 @@ gulp.task("less", function () {
 });
 
 gulp.task("default", () => {
-    watch("src/style/**/*.less", function () {
-        gulp.src("src/style/**/*.less").pipe(gulp.dest("less"));
-    });
-
-    watch("src/script/**/*.ts", function () {
-        gulp.src("src/script/**/*.ts").pipe(gulp.dest("tsc"));
-    });
+    gulp.series(["tsc", "less"]);
+    watch("src/style/**/*.less", gulp.series(["less"]));
+    watch("src/script/**/*.ts", gulp.series(["tsc"]));
 });
