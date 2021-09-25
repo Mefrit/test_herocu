@@ -18,14 +18,14 @@ gulp.task("less", function () {
         .src("./src/style/**/*.less")
         .pipe(
             less({
-                paths: [path.join(__dirname, "less", "includes")],
+                paths: [path.join(__dirname, "includes")],
             })
         )
         .pipe(gulp.dest("./public/css"));
 });
 
 gulp.task("default", () => {
-    gulp.series(["tsc", "less"]);
+    gulp.series(["less"]);
     watch("src/style/**/*.less", gulp.series(["less"]));
-    watch("src/script/**/*.ts", gulp.series(["tsc"]));
+    // watch("src/script/**/*.ts", gulp.series(["tsc"]));
 });

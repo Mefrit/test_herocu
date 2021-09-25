@@ -10,25 +10,16 @@
         "moduleResolution": "node",
         "strictNullChecks": true,
         "noUnusedLocals": true,
-        "lib": [
-            "es2015.iterable",
-            "es5",
-            "es6",
-            "es2015",
-            "es2017",
-            "dom",
-            "es2015.core",
-            "es2015.promise"
-        ],
-        "types": [
-            "ace",
-            "ckeditor",
-            "immutable",
-            "react",
-            "react-dom",
-            "react-dropzone",
-            "requirejs",
-            "@editorjs/editorjs"
-        ]
-    }
+        "baseUrl": "./",
+        "outDir": "./public/scripts"
+    },
+
+    "include": ["./src/js/**/*.ts", "./src/ts/**/*.ts", "./src/**/*.ts"],
+    "exclude": [
+        "./node_modules",
+        "./src/requireJSconfig/requireConfig.js",
+        "./dist/app.js",
+        "/webpack.config.js",
+        "./server.js"
+    ]
 }

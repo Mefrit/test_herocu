@@ -1,0 +1,128 @@
+* {
+    width: 100%;
+    box-sizing: border-box;
+    padding: auto;
+}
+body {
+    // background-image: url("../images/background.jpg");
+    background-color: rgb(63, 129, 252);
+}
+html {
+    width: 100%;
+}
+.canvas {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(41, 41, 41);
+}
+
+.sence__block {
+    /* background-image: url("../images/block.png") ; */
+    /* float: left; */
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    z-index: 90;
+    padding: 0px;
+    border: 1px solid black;
+}
+.container {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.chat {
+    background-color: rgba(24, 15, 82, 0.487);
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    margin-left: 15px;
+    margin-top: 10px;
+    textarea {
+        border-radius: 10px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    &__messages {
+        color: aliceblue;
+        margin-bottom: 10px;
+        border: 1px solid aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+        p {
+            padding: 0px 5px;
+            font-size: 20px;
+        }
+    }
+    &__sentbtn {
+        width: 150px;
+        padding: 5px;
+
+        border-radius: 10px;
+        float: right;
+        color: aliceblue;
+        background-color: rgba(24, 15, 82, 0.768);
+        border: 1px solid aliceblue;
+    }
+    h1 {
+        color: aliceblue;
+    }
+}
+.container_game {
+    display: flex;
+    width: 500px;
+    position: absolute;
+    left: 950px;
+    height: 300px;
+    z-index: 100;
+    top: 750px;
+    background-color: rgba(119, 10, 133, 0.172);
+}
+.game {
+    &__block {
+        background-color: rgb(46, 46, 46);
+        width: 60px;
+        border: 3px solid white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px white;
+        margin: 5px;
+
+        height: 80px;
+    }
+    &__block-round {
+        background-image: url("../../src/images/round.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: initial;
+        background-size: contain;
+    }
+    &__block-cross {
+        background-image: url("../../src/images/krst.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: initial;
+        background-size: contain;
+    }
+    &__again {
+        width: 80px;
+        height: 30px;
+    }
+}
+.interface {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    &__taskInfo {
+        display: flex;
+        flex-direction: row;
+    }
+    &__description {
+        margin-top: 10px;
+        height: 70px;
+    }
+}
