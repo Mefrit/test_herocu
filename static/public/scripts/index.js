@@ -1,4 +1,4 @@
-define(["require", "exports", "react", "react-dom", "./js/loader", "./modules/messenger"], function (require, exports, React, ReactDOM, loader_1, messenger_1) {
+define(["require", "exports", "react", "react-dom", "./modules_main_game/loader", "./modules_main_game/modules/scene", "./modules_messenger/messenger"], function (require, exports, React, ReactDOM, loader_1, scene_1, messenger_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var loader = new loader_1.Downloader();
@@ -7,20 +7,12 @@ define(["require", "exports", "react", "react-dom", "./js/loader", "./modules/me
             url: "./static/src/images/hola_1.png",
             x: 11,
             y: 3,
-            evil: false,
-            class: "fighter",
-            damage: 15,
-            health: 95,
             id: 0,
         },
         {
             url: "./static/src/images/person1.png",
             x: 4,
             y: 3,
-            evil: false,
-            class: "fighter",
-            damage: 15,
-            health: 95,
             id: 1,
         },
     ];
@@ -91,14 +83,14 @@ define(["require", "exports", "react", "react-dom", "./js/loader", "./modules/me
         {
             url: "./static/src/images/table.png",
             x: 5,
-            y: 2,
+            y: 6,
             id: 1,
             type: "table",
         },
         {
             url: "./static/src/images/table.png",
             x: 5,
-            y: 3,
+            y: 2,
             id: 1,
             type: "table",
         },
@@ -112,7 +104,7 @@ define(["require", "exports", "react", "react-dom", "./js/loader", "./modules/me
         {
             url: "./static/src/images/table.png",
             x: 6,
-            y: 3,
+            y: 6,
             id: 1,
             type: "table",
         },
@@ -187,7 +179,7 @@ define(["require", "exports", "react", "react-dom", "./js/loader", "./modules/me
             type: "wall",
         },
         {
-            url: "./static/src/images/walls.png",
+            url: "./static/src/images/walls-angle.png",
             x: 3,
             y: 4,
             id: 3,
@@ -320,22 +312,59 @@ define(["require", "exports", "react", "react-dom", "./js/loader", "./modules/me
             type: "desck",
         },
     ];
-    var config_skins = [];
+    var config_skins = [
+        {
+            class: "perosn1",
+            children: [{
+                    src_json: "/static/src/images/dragon/StoppingAnim_ske.json",
+                    src_images: [
+                        { name: "body", path: "../static/src/images/dragon/person1/body.png" },
+                        { name: "left_arm_1", path: "../static/src/images/dragon/person1/left_arm_1.png" },
+                        { name: "left_arm_2", path: "../static/src/images/dragon/person1/left_arm_2.png" },
+                        { name: "left_leg_1", path: "../static/src/images/dragon/person1/left_leg_1.png" },
+                        { name: "left_leg_2", path: "../static/src/images/dragon/person1/left_leg_2.png" },
+                        { name: "right_arm_1", path: "../static/src/images/dragon/person1/right_arm_1.png" },
+                        { name: "right_arm_2", path: "../static/src/images/dragon/person1/right_arm_2.png" },
+                        { name: "right_leg_1", path: "../static/src/images/dragon/person1/right_leg_1.png" },
+                        { name: "right_leg_2", path: "../static/src/images/dragon/person1/right_leg_2.png" }
+                    ],
+                    name: "default_perosn1",
+                    class: "woman",
+                    scale: 0.4
+                }
+            ]
+        }
+    ];
     var ROOT = document.getElementById("root");
     ReactDOM.render(React.createElement(messenger_1.App, null), ROOT);
     var Director = (function () {
-        function Director(loader, arrPersons) {
+        function Director(loader, arrPersons, arrFurniture, config_skins) {
             var _this = this;
+            this.loadScene = function (arrPersons, id_curent_user) {
+                if (!_this.load) {
+                    _this.load = true;
+                    console.log("id_curent_user", id_curent_user);
+                    _this.scene = new scene_1.Scene(_this.loader, arrPersons, _this.config_skins, _this.arrFurniture, id_curent_user);
+                }
+            };
+            this.updateScene = function (arrPersons, id_curent_user) {
+                _this.scene.updateScene(arrPersons, id_curent_user);
+            };
             this.startAI = function () {
                 _this.ai.step();
             };
+            this.load = false;
+            this.loader = loader;
+            this.arrPersons = arrPersons;
+            this.arrFurniture = arrFurniture;
+            this.config_skins = config_skins;
             this.start();
         }
         Director.prototype.start = function () {
             var ROOT = document.getElementById("root");
-            ReactDOM.render(React.createElement(messenger_1.App, null), ROOT);
+            ReactDOM.render(React.createElement(messenger_1.App, { loadScene: this.loadScene, updateScene: this.updateScene }), ROOT);
         };
         return Director;
     }());
-    new Director(loader, arrPersons);
+    new Director(loader, arrPersons, arrFurniture, config_skins);
 });

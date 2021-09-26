@@ -15,7 +15,7 @@ def start():
         conf["data"] = request.json
 
         
-        print("\n\n data['password']=> ", conf)
+        # print("\n\n data['password']=> ", conf)
         result = main_server.getAnswerFromComponent(conf)
 
         return jsonify(result)

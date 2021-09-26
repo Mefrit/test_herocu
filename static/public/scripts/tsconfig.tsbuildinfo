@@ -31,54 +31,39 @@
         "signature": "10febb36156a0c1e3a52b4a5699a758c3062786ebce78d8d834150be0d5b77df",
         "affectsGlobalScope": false
       },
-      "../../src/script/lib/defaultmethods.ts": {
-        "version": "75524950a1cea017415b15363c78aa9217842cde17c062c0ee5ad877d36497f1",
-        "signature": "b05b7e41f56f565337619466aede86ed0a8bb6d3abf1b994703f76195d83c3ef",
-        "affectsGlobalScope": false
-      },
-      "../../src/script/lib/defaultglobalstrategiesmethods.ts": {
-        "version": "44da9a98fd2ae461c3ce29ffcfa7e3841ecc815d41e187a174fb67c91cbf5634",
-        "signature": "feae044bbd74fe3b9684ceac45e66e69de2e67d870750679fba914a8bfc62d23",
-        "affectsGlobalScope": false
-      },
-      "../../src/script/globalstrategies/globalundercoverarcherattack.ts": {
-        "version": "133d165f92add18b991e8657a6c426dd1f6c165e6bda205fbfdbb9cd838f9945",
-        "signature": "cb81b74bbbffbd89da3ab2bb19dd2066022a3896712c6eda587a24e9e38e8fe3",
-        "affectsGlobalScope": false
-      },
-      "../../src/script/js/loader.ts": {
+      "../../src/script/modules_main_game/loader.ts": {
         "version": "97e928c782b65aa367a80e3f6239725286cf001f5b1e910384a2c50cc651b314",
         "signature": "10febb36156a0c1e3a52b4a5699a758c3062786ebce78d8d834150be0d5b77df",
         "affectsGlobalScope": false
       },
-      "../../src/script/js/lib/dragon.ts": {
-        "version": "2b116e5f1003f99ffecdbf30b5c0b6858d0781963bad42a0882b4472598c524e",
-        "signature": "697c35f79c535de8c14bcec76d927d72e005bc437ac74d629a9230da82bfcaee",
+      "../../src/script/modules_main_game/lib/dragon.ts": {
+        "version": "23e71a023c0a60880b33eec1031ad0173d2a04db169c87e1bf0342fe74e9ad40",
+        "signature": "f5eaa28b75bbb76a92dc4c8cb1cb6113f27ab457c2ec12c17ba8640cb28e1a23",
         "affectsGlobalScope": false
       },
-      "../../src/script/js/viewscene.ts": {
-        "version": "dc833a40fd83dac387cfb0789c45e2fe015696344823e6456b87a49c49c9bcfa",
+      "../../src/script/modules_main_game/viewscene.ts": {
+        "version": "dc2568dfffab1f943eca81cb2903c6149cbf3d8364c66ce5d3b5418542733efb",
         "signature": "f67d4d1ddeffc9922f279bc54a82fe829820dbbff38396cf988c410ffe2d7c16",
         "affectsGlobalScope": false
       },
-      "../../src/script/js/lib/minigame.ts": {
-        "version": "da772421529c8bd01100c947f7729dd0ed7f54e2f6a633dc18f25749972167eb",
+      "../../src/script/modules_main_game/lib/minigame.ts": {
+        "version": "abc37d4d3039805385655cae0d99c0d9cacfa86af1f1eb9ee7ff3e1f21a6fc3c",
         "signature": "ac4b4a543d73eef677e8e46ed76b9b1d6a80f2c23a1057bd082c5aecb9bebcda",
         "affectsGlobalScope": false
       },
-      "../../src/script/js/modules/person.ts": {
-        "version": "1e055aacfe70476a2dd2eeaa5b352724bf7c2dd91da0d22142ade7a1b99f3313",
-        "signature": "b1ba395fc5fe977daf158bec22f51ae57b9ebf824ae202b6df2102d1b0db44d3",
+      "../../src/script/modules_main_game/modules/person.ts": {
+        "version": "6914d9243e2f22bd531a1689eccd84084641329dceba827d2e312e116aa4b33d",
+        "signature": "06ad04809b31a43da36168775ba43a1bd42faa293116c2f4fd3c9867a2c338ec",
         "affectsGlobalScope": false
       },
-      "../../src/script/js/modules/furniture.ts": {
+      "../../src/script/modules_main_game/modules/furniture.ts": {
         "version": "b2fcef1f0b09fd9906b2106627d54269fc5a3058fb15bbc53065e7abe4b97ab0",
         "signature": "632e8c3357a6345e9b0107ccb22e94f7bcbd17ca408ca49e039bc18b96a72f31",
         "affectsGlobalScope": false
       },
-      "../../src/script/js/modules/person_collection.ts": {
-        "version": "ea06cc12a31d367dee45c1edeb36df18522101803310fd9fb83c41074c481bf1",
-        "signature": "e4f8e02114ee5fd9e20c4171ec230a788901a4d450bd02c51efd47e64ee755ba",
+      "../../src/script/modules_main_game/modules/person_collection.ts": {
+        "version": "bd467d1d7c126bbce5b7545de1788fa7be09fe137f8f225fcff3f2f575c11650",
+        "signature": "dc1ef287bdbcfd15b2548c92011a8957298bba55686e104579d05f7d06b6edcd",
         "affectsGlobalScope": false
       },
       "../../node_modules/@types/react/global.d.ts": {
@@ -111,94 +96,59 @@
         "signature": "b4dfafe583b829a382edccbe32303535d0785f0c02ba7f04418e2a81de97af8a",
         "affectsGlobalScope": false
       },
-      "../../src/script/js/lib/deskboard.tsx": {
+      "../../src/script/modules_main_game/lib/deskboard.tsx": {
         "version": "57cf854bdbc7f50780710d09dfaf228a32198bd3dfd74d4d7e1e680722094080",
         "signature": "b01618fc1dfb4dae00a66e3d6ae2bffe5de9aa0c3ebf60623d1e3983831c98b3",
         "affectsGlobalScope": false
       },
-      "../../src/script/js/modules/scene.ts": {
-        "version": "cb0ec4fb2b20d5a14fbfaca8c46ffe07afa95f09467fd1d2f14694a933fac0e1",
-        "signature": "eb951901c4e3bfae4a35ea78071f8dc1f61b323bab452304fafbf9dfc5d6b9dc",
+      "../../src/script/modules_main_game/modules/scene.ts": {
+        "version": "fc76445f4114084e239a6af993eccefff89ddc91eb80bb06da54bd078388e7f8",
+        "signature": "0b47abcb857c5675df201c64829a6ee9a397e87d20d86aa5bd703446413ab08c",
         "affectsGlobalScope": false
       },
-      "../../src/script/lib/back.ts": {
-        "version": "1168b540ecf9e5135b905bca5b23f6c72882f379b53705e17ffde35ef7b193c8",
-        "signature": "012277f6257b2eaf560cd1e013c9837d7dd70b1bb535dbfa0e0845997ff84fb1",
-        "affectsGlobalScope": true
-      },
-      "../../src/script/lib/dragon.ts": {
-        "version": "2b116e5f1003f99ffecdbf30b5c0b6858d0781963bad42a0882b4472598c524e",
-        "signature": "697c35f79c535de8c14bcec76d927d72e005bc437ac74d629a9230da82bfcaee",
+      "../../src/script/modules_messenger/loader.ts": {
+        "version": "97e928c782b65aa367a80e3f6239725286cf001f5b1e910384a2c50cc651b314",
+        "signature": "10febb36156a0c1e3a52b4a5699a758c3062786ebce78d8d834150be0d5b77df",
         "affectsGlobalScope": false
       },
-      "../../src/script/lib/scene.ts": {
-        "version": "52e5b424000be43da36a5e135284130213660b56623f97f86acf40c33ccf0a51",
-        "signature": "298ba966087ea459ca50988bd3b56f8587a949e95d52f59ce37098a0b48fbc97",
-        "affectsGlobalScope": false
-      },
-      "../../src/script/modules/ai.ts": {
-        "version": "418fd8866e9f10f53f6f005a06c0f6ec4335c9f664d3a60394a496405bc34b33",
-        "signature": "4101e013f8c5303b90a9e47fa0565ce22815f4075bc9c4f9a00f5e4270034275",
-        "affectsGlobalScope": false
-      },
-      "../../src/script/modules/person.ts": {
+      "../../src/script/modules_messenger/person.ts": {
         "version": "1e055aacfe70476a2dd2eeaa5b352724bf7c2dd91da0d22142ade7a1b99f3313",
         "signature": "b1ba395fc5fe977daf158bec22f51ae57b9ebf824ae202b6df2102d1b0db44d3",
         "affectsGlobalScope": false
       },
-      "../../src/script/modules/person_collection.ts": {
+      "../../src/script/modules_messenger/person_collection.ts": {
         "version": "cf63de56d4e3f0a64b02d19d5a8b250c92790e00dc4db47bc5a948c0357b8b57",
         "signature": "c5df37832ea5434e5d5d6ff0c6ea7e40c7524473d88e8e9412f403001b0c88f4",
         "affectsGlobalScope": false
       },
-      "../../src/script/modules/scene_delete.ts": {
-        "version": "9d614e06baa23cc6842df10024424929db2cc058a9b66cefa5b66ae1b2dacae0",
-        "signature": "04a7746a116517ffb9578a7541287ce009be8ff28aa2dbc1e5e46d0be50f73b9",
-        "affectsGlobalScope": false
-      },
-      "../../src/script/modules/components/registration.tsx": {
-        "version": "70ee309a17c12608a7cfe2310ae91032025a784ca1f26785043c266eaf832fb5",
+      "../../src/script/modules_messenger/components/registration.tsx": {
+        "version": "24aa347563e69c114e82cd29bbf10a42fcc13c0ad55831bade42a923d0d87ef1",
         "signature": "2a7f0f0bbb514e0b578cc0294146ca033b5015b4bb9a271bd42c1907fcd4d898",
         "affectsGlobalScope": false
       },
-      "../../src/script/modules/components/tools.tsx": {
-        "version": "73ec6a5b0e823d0a3d6036b9214b270e4f43f2453f1ddd02132e8886933b875e",
+      "../../src/script/modules_messenger/components/tools.tsx": {
+        "version": "cb2360dcc486ee093036d249dbf4fff215475cecd9e6cfef8899b05012685bbd",
         "signature": "fc2c121b5832d06fd6ae2c781a616414ccb3ae5667fee532400f1cd2d48cc615",
         "affectsGlobalScope": false
       },
-      "../../src/script/modules/components/chat.tsx": {
+      "../../src/script/modules_messenger/components/chat.tsx": {
         "version": "60c4861694f7ec1939601278da4fc3351708385f06c6f50e19df75b8696de3b9",
         "signature": "facf954e309422ea6a95819bfc14181c40c6c3c36724c70504ccdb13381fbad7",
         "affectsGlobalScope": false
       },
-      "../../src/script/modules/components/scene.tsx": {
-        "version": "8fec5975a7bae0804bfc37c2de417a3a745090ab7cdecc27c7afb05bc3aeab60",
+      "../../src/script/modules_messenger/components/scene.tsx": {
+        "version": "834f4eaae86281c3458d7808ae60586aa3b850d2ebd9593b7f5bb82606ab396d",
         "signature": "1e27684ffc67f791575d5c5de8ad5ab99361b2fee6eebb96f717b3f80452b663",
         "affectsGlobalScope": false
       },
-      "../../src/script/modules/messenger.tsx": {
-        "version": "9a8b756864e453c31eca224303c5681d2a399dc637c8c0ecc9fe847e8f9b4c88",
-        "signature": "169c00e9de3bbed3eb10e6111f531beab717619a2b4f349a0d1006e75d558727",
+      "../../src/script/modules_messenger/messenger.tsx": {
+        "version": "3c41f7c0db4141cb9a79df84df0daa1a55b931fb341eb2ceb00155cfa52981fd",
+        "signature": "eaa7d2e31f792886bf553782c29a7ffe67cb3dca6026a62d13fec648c4736cb4",
         "affectsGlobalScope": false
       },
       "../../src/script/index.tsx": {
-        "version": "286e08175b6f33c57bec47a0655eaefb240363301afcd3c9e9b91bb4385156a8",
+        "version": "5cdceac1317373843696031351b554466e711c38b7f0ffd2bcaecb6a3d972ebc",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
-        "affectsGlobalScope": false
-      },
-      "../../src/script/globalstrategies/globaldistanceagro.tsx": {
-        "version": "9307cef9aee6c96cb1b5f6e74eeec60d7b72b7fe0f709bd301ec4e69d3d1251d",
-        "signature": "be02f8255447e9ae99cb4711d46580857604953ba81eafa2dbd1f1480df3e40e",
-        "affectsGlobalScope": false
-      },
-      "../../src/script/globalstrategies/globalprotectarchers.tsx": {
-        "version": "d5f986cfb065cf9b069bea0383ec92ee5d560997095c717514524519e8e4054b",
-        "signature": "8b83831a8c26c85e44a68149b8106f12b17d56acba73af2c1085e3c1c3588b94",
-        "affectsGlobalScope": false
-      },
-      "../../src/script/globalstrategies/globalsmartagro.tsx": {
-        "version": "67957c8ca60b5fe6753a7ccb1ac0f5e34b38f7c9ddbf90714ae3c1ab802a9ae2",
-        "signature": "fa107a895a7f6c8dc4b7178fa8a43b17590a0d204eb2b3d8233378a6b510c5d6",
         "affectsGlobalScope": false
       },
       "../../node_modules/@types/scheduler/index.d.ts": {
@@ -233,77 +183,56 @@
         "../../node_modules/@types/scheduler/tracing.d.ts",
         "../../node_modules/csstype/index.d.ts"
       ],
-      "../../src/script/globalstrategies/globaldistanceagro.tsx": [
-        "../../src/script/lib/defaultglobalstrategiesmethods.ts"
-      ],
-      "../../src/script/globalstrategies/globalprotectarchers.tsx": [
-        "../../src/script/lib/defaultglobalstrategiesmethods.ts"
-      ],
-      "../../src/script/globalstrategies/globalsmartagro.tsx": [
-        "../../src/script/lib/defaultglobalstrategiesmethods.ts"
-      ],
-      "../../src/script/globalstrategies/globalundercoverarcherattack.ts": [
-        "../../src/script/lib/defaultglobalstrategiesmethods.ts"
-      ],
       "../../src/script/index.tsx": [
         "../../node_modules/@types/react-dom/index.d.ts",
         "../../node_modules/@types/react/index.d.ts",
-        "../../src/script/js/loader.ts",
-        "../../src/script/js/modules/scene.ts",
-        "../../src/script/modules/messenger.tsx"
+        "../../src/script/modules_main_game/loader.ts",
+        "../../src/script/modules_main_game/modules/scene.ts",
+        "../../src/script/modules_messenger/messenger.tsx"
       ],
-      "../../src/script/js/lib/deskboard.tsx": [
+      "../../src/script/modules_main_game/lib/deskboard.tsx": [
         "../../node_modules/@types/react-dom/index.d.ts",
         "../../node_modules/@types/react/index.d.ts"
       ],
-      "../../src/script/js/modules/furniture.ts": [
-        "../../src/script/js/modules/person.ts"
+      "../../src/script/modules_main_game/modules/furniture.ts": [
+        "../../src/script/modules_main_game/modules/person.ts"
       ],
-      "../../src/script/js/modules/person_collection.ts": [
-        "../../src/script/js/modules/furniture.ts",
-        "../../src/script/js/modules/person.ts"
+      "../../src/script/modules_main_game/modules/person_collection.ts": [
+        "../../src/script/modules_main_game/modules/furniture.ts",
+        "../../src/script/modules_main_game/modules/person.ts"
       ],
-      "../../src/script/js/modules/scene.ts": [
-        "../../src/script/js/lib/deskboard.tsx",
-        "../../src/script/js/lib/dragon.ts",
-        "../../src/script/js/lib/minigame.ts",
-        "../../src/script/js/modules/person.ts",
-        "../../src/script/js/modules/person_collection.ts",
-        "../../src/script/js/viewscene.ts"
+      "../../src/script/modules_main_game/modules/scene.ts": [
+        "../../src/script/modules_main_game/lib/deskboard.tsx",
+        "../../src/script/modules_main_game/lib/dragon.ts",
+        "../../src/script/modules_main_game/lib/minigame.ts",
+        "../../src/script/modules_main_game/modules/person.ts",
+        "../../src/script/modules_main_game/modules/person_collection.ts",
+        "../../src/script/modules_main_game/viewscene.ts"
       ],
-      "../../src/script/js/viewscene.ts": [
-        "../../src/script/js/lib/dragon.ts"
+      "../../src/script/modules_main_game/viewscene.ts": [
+        "../../src/script/modules_main_game/lib/dragon.ts"
       ],
-      "../../src/script/lib/defaultglobalstrategiesmethods.ts": [
-        "../../src/script/lib/defaultmethods.ts"
-      ],
-      "../../src/script/modules/components/chat.tsx": [
+      "../../src/script/modules_messenger/components/chat.tsx": [
         "../../node_modules/@types/react/index.d.ts"
       ],
-      "../../src/script/modules/components/registration.tsx": [
+      "../../src/script/modules_messenger/components/registration.tsx": [
         "../../node_modules/@types/react/index.d.ts"
       ],
-      "../../src/script/modules/components/scene.tsx": [
+      "../../src/script/modules_messenger/components/scene.tsx": [
         "../../node_modules/@types/react/index.d.ts",
-        "../../src/script/modules/components/chat.tsx",
-        "../../src/script/modules/components/tools.tsx"
+        "../../src/script/modules_messenger/components/chat.tsx",
+        "../../src/script/modules_messenger/components/tools.tsx"
       ],
-      "../../src/script/modules/components/tools.tsx": [
+      "../../src/script/modules_messenger/components/tools.tsx": [
         "../../node_modules/@types/react/index.d.ts"
       ],
-      "../../src/script/modules/messenger.tsx": [
+      "../../src/script/modules_messenger/messenger.tsx": [
         "../../node_modules/@types/react/index.d.ts",
-        "../../src/script/modules/components/registration.tsx",
-        "../../src/script/modules/components/scene.tsx"
+        "../../src/script/modules_messenger/components/registration.tsx",
+        "../../src/script/modules_messenger/components/scene.tsx"
       ],
-      "../../src/script/modules/person_collection.ts": [
-        "../../src/script/modules/person.ts"
-      ],
-      "../../src/script/modules/scene_delete.ts": [
-        "../../src/script/js/viewscene.ts",
-        "../../src/script/lib/dragon.ts",
-        "../../src/script/modules/person.ts",
-        "../../src/script/modules/person_collection.ts"
+      "../../src/script/modules_messenger/person_collection.ts": [
+        "../../src/script/modules_messenger/person.ts"
       ]
     },
     "exportedModulesMap": {
@@ -316,37 +245,22 @@
         "../../node_modules/@types/scheduler/tracing.d.ts",
         "../../node_modules/csstype/index.d.ts"
       ],
-      "../../src/script/globalstrategies/globaldistanceagro.tsx": [
-        "../../src/script/lib/defaultglobalstrategiesmethods.ts"
+      "../../src/script/modules_main_game/modules/furniture.ts": [
+        "../../src/script/modules_main_game/modules/person.ts"
       ],
-      "../../src/script/globalstrategies/globalprotectarchers.tsx": [
-        "../../src/script/lib/defaultglobalstrategiesmethods.ts"
-      ],
-      "../../src/script/globalstrategies/globalsmartagro.tsx": [
-        "../../src/script/lib/defaultglobalstrategiesmethods.ts"
-      ],
-      "../../src/script/globalstrategies/globalundercoverarcherattack.ts": [
-        "../../src/script/lib/defaultglobalstrategiesmethods.ts"
-      ],
-      "../../src/script/js/modules/furniture.ts": [
-        "../../src/script/js/modules/person.ts"
-      ],
-      "../../src/script/lib/defaultglobalstrategiesmethods.ts": [
-        "../../src/script/lib/defaultmethods.ts"
-      ],
-      "../../src/script/modules/components/chat.tsx": [
+      "../../src/script/modules_messenger/components/chat.tsx": [
         "../../node_modules/@types/react/index.d.ts"
       ],
-      "../../src/script/modules/components/registration.tsx": [
+      "../../src/script/modules_messenger/components/registration.tsx": [
         "../../node_modules/@types/react/index.d.ts"
       ],
-      "../../src/script/modules/components/scene.tsx": [
+      "../../src/script/modules_messenger/components/scene.tsx": [
         "../../node_modules/@types/react/index.d.ts"
       ],
-      "../../src/script/modules/components/tools.tsx": [
+      "../../src/script/modules_messenger/components/tools.tsx": [
         "../../node_modules/@types/react/index.d.ts"
       ],
-      "../../src/script/modules/messenger.tsx": [
+      "../../src/script/modules_messenger/messenger.tsx": [
         "../../node_modules/@types/react/index.d.ts"
       ]
     },
@@ -427,924 +341,34 @@
         ]
       ],
       "../../node_modules/csstype/index.d.ts",
+      "../../src/script/index.tsx",
+      "../../src/script/loader.ts",
+      "../../src/script/modules_main_game/lib/deskboard.tsx",
       [
-        "../../src/script/globalstrategies/globaldistanceagro.tsx",
+        "../../src/script/modules_main_game/lib/dragon.ts",
         [
           {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 133,
-            "length": 39,
-            "messageText": "Cannot find module '../strategies/cacheUnitSingleStrategy' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 3990,
-            "length": 13,
-            "messageText": "'fighter_first' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 4414,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 4512,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 4722,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 4740,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 5043,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 5347,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 5365,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 5405,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'isArchers' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 5512,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 5558,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 6010,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 6091,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 7242,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 7393,
-            "length": 11,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 7604,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 9187,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globaldistanceagro.tsx",
-            "start": 9609,
-            "length": 7,
-            "messageText": "'enemies' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          }
-        ]
-      ],
-      [
-        "../../src/script/globalstrategies/globalprotectarchers.tsx",
-        [
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 133,
-            "length": 39,
-            "messageText": "Cannot find module '../strategies/cacheUnitSingleStrategy' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 6303,
-            "length": 13,
-            "messageText": "'fighter_first' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 6844,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 6862,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 7165,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 7544,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 7562,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 7602,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'isArchers' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 7650,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 7760,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 7929,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 7975,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 8110,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 8156,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 8291,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 8337,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 9591,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 9672,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 10589,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 10740,
-            "length": 11,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 10951,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 11429,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 11587,
-            "length": 11,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 11711,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 12620,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalprotectarchers.tsx",
-            "start": 13338,
-            "length": 14,
-            "messageText": "'chosen_enemime' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          }
-        ]
-      ],
-      [
-        "../../src/script/globalstrategies/globalsmartagro.tsx",
-        [
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 133,
-            "length": 39,
-            "messageText": "Cannot find module '../strategies/cacheUnitSingleStrategy' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 1392,
-            "length": 13,
-            "messageText": "'fighter_first' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 1816,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 1914,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 2124,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 2142,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 2445,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 2750,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 2768,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 2808,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'isArchers' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 2915,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 2961,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 3208,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 4115,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 4196,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 5110,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 5261,
-            "length": 11,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 5472,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 5950,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 6108,
-            "length": 11,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 6232,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 6809,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 7022,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 7040,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalsmartagro.tsx",
-            "start": 7265,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          }
-        ]
-      ],
-      [
-        "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-        [
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 133,
-            "length": 39,
-            "messageText": "Cannot find module '../strategies/cacheUnitSingleStrategy' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 4831,
-            "length": 13,
-            "messageText": "'fighter_first' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 5322,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 5420,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 5630,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 5648,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 5953,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 6256,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 6274,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 6314,
-            "length": 9,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'isArchers' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 6447,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 6497,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 7497,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 7578,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 8536,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 8724,
-            "length": 11,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 8935,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 9473,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 9674,
-            "length": 11,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 9796,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 10373,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/globalstrategies/globalundercoverarcherattack.ts",
-            "start": 10709,
-            "length": 6,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'person' does not exist on type 'never'."
-          }
-        ]
-      ],
-      [
-        "../../src/script/index.tsx",
-        [
-          {
-            "file": "../../src/script/index.tsx",
-            "start": 116,
-            "length": 43,
-            "messageText": "'Scene' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/index.tsx",
-            "start": 673,
-            "length": 12,
-            "messageText": "'arrFurniture' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/index.tsx",
-            "start": 6308,
-            "length": 12,
-            "messageText": "'config_skins' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          }
-        ]
-      ],
-      "../../src/script/js/lib/deskboard.tsx",
-      [
-        "../../src/script/js/lib/dragon.ts",
-        [
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
+            "file": "../../src/script/modules_main_game/lib/dragon.ts",
             "start": 3930,
             "length": 5,
             "messageText": "'frame' is declared but its value is never read.",
             "category": 1,
             "code": 6133,
             "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 7618,
-            "length": 3,
-            "messageText": "'img' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 9139,
-            "length": 3,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 9189,
-            "length": 3,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type '{ x: any; y: any; skX: any; z: any; }' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 9523,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'pos' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 9537,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'pos' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 9880,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'pos' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 9898,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'pos' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 9946,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'pos' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 10663,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'img' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 10674,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'img' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/js/lib/dragon.ts",
-            "start": 10695,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'img' does not exist on type 'never'."
           }
         ]
       ],
-      "../../src/script/js/lib/minigame.ts",
-      "../../src/script/js/loader.ts",
-      "../../src/script/js/modules/furniture.ts",
-      "../../src/script/js/modules/person.ts",
-      "../../src/script/js/modules/person_collection.ts",
+      "../../src/script/modules_main_game/lib/minigame.ts",
+      "../../src/script/modules_main_game/loader.ts",
+      "../../src/script/modules_main_game/modules/furniture.ts",
+      "../../src/script/modules_main_game/modules/person.ts",
+      "../../src/script/modules_main_game/modules/person_collection.ts",
       [
-        "../../src/script/js/modules/scene.ts",
+        "../../src/script/modules_main_game/modules/scene.ts",
         [
           {
-            "file": "../../src/script/js/modules/scene.ts",
-            "start": 0,
-            "length": 34,
-            "messageText": "'Person' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/js/modules/scene.ts",
-            "start": 1557,
+            "file": "../../src/script/modules_main_game/modules/scene.ts",
+            "start": 2465,
             "length": 4,
             "messageText": "'posX' is declared but its value is never read.",
             "category": 1,
@@ -1352,8 +376,8 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../src/script/js/modules/scene.ts",
-            "start": 1576,
+            "file": "../../src/script/modules_main_game/modules/scene.ts",
+            "start": 2484,
             "length": 4,
             "messageText": "'posY' is declared but its value is never read.",
             "category": 1,
@@ -1361,8 +385,8 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../src/script/js/modules/scene.ts",
-            "start": 8036,
+            "file": "../../src/script/modules_main_game/modules/scene.ts",
+            "start": 10369,
             "length": 5,
             "messageText": "'desck' is declared but its value is never read.",
             "category": 1,
@@ -1370,8 +394,8 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../src/script/js/modules/scene.ts",
-            "start": 8258,
+            "file": "../../src/script/modules_main_game/modules/scene.ts",
+            "start": 10855,
             "length": 9,
             "messageText": "'mini_game' is declared but its value is never read.",
             "category": 1,
@@ -1379,8 +403,8 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../src/script/js/modules/scene.ts",
-            "start": 8934,
+            "file": "../../src/script/modules_main_game/modules/scene.ts",
+            "start": 11722,
             "length": 14,
             "messageText": "'image_domcache' is declared but its value is never read.",
             "category": 1,
@@ -1390,10 +414,10 @@
         ]
       ],
       [
-        "../../src/script/js/viewscene.ts",
+        "../../src/script/modules_main_game/viewscene.ts",
         [
           {
-            "file": "../../src/script/js/viewscene.ts",
+            "file": "../../src/script/modules_main_game/viewscene.ts",
             "start": 0,
             "length": 53,
             "messageText": "'DragonAnimationUpdate' is declared but its value is never read.",
@@ -1402,8 +426,8 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../src/script/js/viewscene.ts",
-            "start": 2637,
+            "file": "../../src/script/modules_main_game/viewscene.ts",
+            "start": 2651,
             "length": 2,
             "messageText": "'id' is declared but its value is never read.",
             "category": 1,
@@ -1411,8 +435,8 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../src/script/js/viewscene.ts",
-            "start": 3200,
+            "file": "../../src/script/modules_main_game/viewscene.ts",
+            "start": 3214,
             "length": 6,
             "messageText": "'radius' is declared but its value is never read.",
             "category": 1,
@@ -1420,8 +444,8 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../src/script/js/viewscene.ts",
-            "start": 3221,
+            "file": "../../src/script/modules_main_game/viewscene.ts",
+            "start": 3235,
             "length": 9,
             "messageText": "'posXblock' is declared but its value is never read.",
             "category": 1,
@@ -1429,8 +453,8 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../src/script/js/viewscene.ts",
-            "start": 3245,
+            "file": "../../src/script/modules_main_game/viewscene.ts",
+            "start": 3259,
             "length": 9,
             "messageText": "'posYblock' is declared but its value is never read.",
             "category": 1,
@@ -1438,8 +462,8 @@
             "reportsUnnecessary": true
           },
           {
-            "file": "../../src/script/js/viewscene.ts",
-            "start": 3788,
+            "file": "../../src/script/modules_main_game/viewscene.ts",
+            "start": 3802,
             "length": 6,
             "messageText": "'random' is declared but its value is never read.",
             "category": 1,
@@ -1449,457 +473,10 @@
         ]
       ],
       [
-        "../../src/script/lib/back.ts",
+        "../../src/script/modules_messenger/components/chat.tsx",
         [
           {
-            "file": "../../src/script/lib/back.ts",
-            "start": 1351,
-            "length": 7,
-            "messageText": "'Promise' only refers to a type, but is being used as a value here. Do you need to change your target library? Try changing the `lib` compiler option to es2015 or later.",
-            "category": 1,
-            "code": 2585
-          }
-        ]
-      ],
-      "../../src/script/lib/defaultglobalstrategiesmethods.ts",
-      [
-        "../../src/script/lib/defaultmethods.ts",
-        [
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 930,
-            "length": 17,
-            "messageText": "'min_friends_aroun' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 966,
-            "length": 7,
-            "messageText": "'friends' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 4877,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 4892,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 4928,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 4943,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 4997,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 5022,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 5267,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 5278,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 5713,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 5729,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 14208,
-            "length": 6,
-            "messageText": "'result' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 14996,
-            "length": 14,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type '0' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 15738,
-            "length": 7,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 15808,
-            "length": 20,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 17493,
-            "length": 14,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type '0' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 18294,
-            "length": 7,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 18364,
-            "length": 20,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 22605,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 22626,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 24670,
-            "length": 3,
-            "messageText": "'res' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 27261,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 27273,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'number' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 27408,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 27420,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 27593,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'number' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 27599,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 27760,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 27766,
-            "length": 1,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 35610,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 36625,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 37269,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'x' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 37321,
-            "length": 1,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'y' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 43807,
-            "length": 17,
-            "messageText": "All variables are unused.",
-            "category": 1,
-            "code": 6199,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/lib/defaultmethods.ts",
-            "start": 46620,
-            "length": 3,
-            "code": 2345,
-            "category": 1,
-            "messageText": "Argument of type 'any' is not assignable to parameter of type 'never'."
-          }
-        ]
-      ],
-      [
-        "../../src/script/lib/dragon.ts",
-        [
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 3930,
-            "length": 5,
-            "messageText": "'frame' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 7618,
-            "length": 3,
-            "messageText": "'img' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 9139,
-            "length": 3,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'any' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 9189,
-            "length": 3,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type '{ x: any; y: any; skX: any; z: any; }' is not assignable to type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 9523,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'pos' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 9537,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'pos' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 9880,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'pos' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 9898,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'pos' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 9946,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'pos' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 10663,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'img' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 10674,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'img' does not exist on type 'never'."
-          },
-          {
-            "file": "../../src/script/lib/dragon.ts",
-            "start": 10695,
-            "length": 3,
-            "code": 2339,
-            "category": 1,
-            "messageText": "Property 'img' does not exist on type 'never'."
-          }
-        ]
-      ],
-      "../../src/script/lib/scene.ts",
-      "../../src/script/loader.ts",
-      [
-        "../../src/script/modules/ai.ts",
-        [
-          {
-            "file": "../../src/script/modules/ai.ts",
-            "start": 61,
-            "length": 62,
-            "messageText": "'AtackTheArcher' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/modules/ai.ts",
-            "start": 92,
-            "length": 30,
-            "messageText": "Cannot find module '../strategies/atackTheArcher' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          },
-          {
-            "file": "../../src/script/modules/ai.ts",
-            "start": 224,
-            "length": 35,
-            "messageText": "Cannot find module '../strategies/cacheGlobalStrategy' or its corresponding type declarations.",
-            "category": 1,
-            "code": 2307
-          }
-        ]
-      ],
-      [
-        "../../src/script/modules/components/chat.tsx",
-        [
-          {
-            "file": "../../src/script/modules/components/chat.tsx",
+            "file": "../../src/script/modules_messenger/components/chat.tsx",
             "start": 211,
             "length": 9,
             "messageText": "'chatState' is declared but never used.",
@@ -1909,35 +486,26 @@
           }
         ]
       ],
-      "../../src/script/modules/components/registration.tsx",
-      "../../src/script/modules/components/scene.tsx",
-      "../../src/script/modules/components/tools.tsx",
-      "../../src/script/modules/messenger.tsx",
-      "../../src/script/modules/person.ts",
-      "../../src/script/modules/person_collection.ts",
+      "../../src/script/modules_messenger/components/registration.tsx",
+      "../../src/script/modules_messenger/components/scene.tsx",
+      "../../src/script/modules_messenger/components/tools.tsx",
+      "../../src/script/modules_messenger/loader.ts",
       [
-        "../../src/script/modules/scene_delete.ts",
+        "../../src/script/modules_messenger/messenger.tsx",
         [
           {
-            "file": "../../src/script/modules/scene_delete.ts",
-            "start": 0,
-            "length": 34,
-            "messageText": "'Person' is declared but its value is never read.",
-            "category": 1,
-            "code": 6133,
-            "reportsUnnecessary": true
-          },
-          {
-            "file": "../../src/script/modules/scene_delete.ts",
-            "start": 5294,
-            "length": 14,
-            "messageText": "'image_domcache' is declared but its value is never read.",
+            "file": "../../src/script/modules_messenger/messenger.tsx",
+            "start": 621,
+            "length": 3,
+            "messageText": "'url' is declared but its value is never read.",
             "category": 1,
             "code": 6133,
             "reportsUnnecessary": true
           }
         ]
-      ]
+      ],
+      "../../src/script/modules_messenger/person.ts",
+      "../../src/script/modules_messenger/person_collection.ts"
     ]
   },
   "version": "3.9.7"

@@ -22,22 +22,19 @@ html {
     padding: 0px;
     border: 1px solid black;
 }
-.container {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .chat {
-    background-color: rgba(24, 15, 82, 0.487);
+    background-color: rgba(109, 109, 109, 0.248);
     max-width: 400px;
     padding: 10px;
     border: 1px solid white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    height: 360px;
+    height: 490px;
     margin-left: 15px;
     margin-top: 10px;
+    color: black;
     textarea {
         border-radius: 10px;
         height: 70px;
@@ -73,10 +70,11 @@ html {
     width: 500px;
     position: absolute;
     left: 950px;
-    height: 300px;
+    height: 370px;
     z-index: 100;
-    top: 750px;
-    background-color: rgba(119, 10, 133, 0.172);
+    top: 720px;
+    flex-direction: column;
+    // background-color: rgba(119, 10, 133, 0.172);
 }
 .game {
     &__block {
@@ -120,4 +118,9 @@ html {
         margin-top: 10px;
         height: 70px;
     }
+}
+.curent_user {
+    box-shadow: 0px 0px 20px rgba(255, 217, 0, 0.165);
+    background-color: rgba(255, 217, 0, 0.138);
+    border-radius: 30px;
 }
