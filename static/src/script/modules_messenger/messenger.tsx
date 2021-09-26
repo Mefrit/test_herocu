@@ -56,6 +56,7 @@ export class App extends React.Component<any, any> {
                             tmp.x = elem[1];
                         }
                         tmp.id = elem[0];
+                        tmp.nick = elem[4];
 
                         return tmp;
                     });
@@ -66,7 +67,6 @@ export class App extends React.Component<any, any> {
                     } else {
                         if (!this.load_scene) {
                             this.load_scene = true;
-
                             this.props.loadScene(arrPersons, this.state.id_curent_user);
                         }
 
@@ -82,7 +82,7 @@ export class App extends React.Component<any, any> {
             this.loadScene(false);
             setInterval(() => {
                 this.loadScene(true);
-            }, 3000);
+            }, 2000);
         }
         return (
             <div className="container">

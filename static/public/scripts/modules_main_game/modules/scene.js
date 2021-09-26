@@ -26,6 +26,13 @@ define(["require", "exports", "./person", "../viewScene", "./person_collection",
                 console.log("curent_unit", curent_unit);
                 if (curent_unit.person.id == _this.id_curent_user) {
                     _this.setCoord2Server(parseInt(posX.split("px")) / 100, parseInt(posY.split("px")) / 100, _this.id_curent_user);
+                    console.log(curent_unit);
+                    curent_unit.stopAnimation("default_perosn1");
+                    curent_unit.playAnimation("walking_perosn1");
+                    setTimeout(function () {
+                        curent_unit.stopAnimation("walking_perosn1");
+                        curent_unit.playAnimation("default_perosn1");
+                    }, 1500);
                     _this.movePersonByCoord(_this.canvas, posX, posY);
                 }
                 else {
@@ -104,7 +111,7 @@ define(["require", "exports", "./person", "../viewScene", "./person_collection",
             var activePerson = [];
             canvas.style.left = parseInt(posX.split("px")[0]) - 30 + "px";
             canvas.style.top = parseInt(posY.split("px")[0]) - 60 + "px";
-            canvas.style.transition = "0.5s";
+            canvas.style.transition = "1.6s";
             activePerson = this.person_collection.getCollection().filter(function (elem) {
                 if (elem.getId() == canvas.getAttribute("data-id")) {
                     elem.setCoord(parseInt(posX.split("px")) / 100, parseInt(posY.split("px")) / 100);
@@ -196,10 +203,16 @@ define(["require", "exports", "./person", "../viewScene", "./person_collection",
             var desck = new deskBoard_1.DesckBoard({});
             if (curent_unit.person.id == this.id_curent_user) {
                 this.setCoord2Server(table.x, table.y, this.id_curent_user);
-                this.movePersonByCoord(curent_unit.domPerson, table.x * 100 + "px", table.y * 100 + 60 + "px");
+                this.movePersonByCoord(curent_unit.domPerson, table.x * 100 + "px", (table.y + 1) * 100 + "px");
             }
         };
         Scene.prototype.workGameAction = function (curent_unit, table) {
+            curent_unit.stopAnimation("default_perosn1");
+            curent_unit.playAnimation("walking_perosn1");
+            setTimeout(function () {
+                curent_unit.stopAnimation("walking_perosn1");
+                curent_unit.playAnimation("funny_perosn1");
+            }, 2000);
             if (curent_unit.person.id == this.id_curent_user) {
                 this.setCoord2Server(table.x, table.y, this.id_curent_user);
                 var mini_game = new miniGame_1.MiniGame();
@@ -207,16 +220,28 @@ define(["require", "exports", "./person", "../viewScene", "./person_collection",
             }
         };
         Scene.prototype.workKitchenAction = function (curent_unit, table) {
+            curent_unit.stopAnimation("default_perosn1");
+            curent_unit.playAnimation("walking_perosn1");
+            setTimeout(function () {
+                curent_unit.stopAnimation("walking_perosn1");
+                curent_unit.playAnimation("eating_perosn1");
+            }, 2000);
             if (curent_unit.person.id == this.id_curent_user) {
                 this.setCoord2Server(table.x, table.y, this.id_curent_user);
                 this.movePersonByCoord(curent_unit.domPerson, table.x * 100 + "px", table.y * 100 + "px");
             }
         };
         Scene.prototype.workTableAction = function (curent_unit, table) {
+            curent_unit.stopAnimation("default_perosn1");
+            curent_unit.playAnimation("walking_perosn1");
+            setTimeout(function () {
+                curent_unit.stopAnimation("walking_perosn1");
+                curent_unit.playAnimation("work_perosn1");
+            }, 2000);
             var posX = table.x;
             if (curent_unit.person.id == this.id_curent_user) {
                 this.setCoord2Server(table.x, table.y, this.id_curent_user);
-                this.movePersonByCoord(curent_unit.domPerson, posX * 100 + "px", table.y * 100 - 15 + "px");
+                this.movePersonByCoord(curent_unit.domPerson, posX * 100 + "px", table.y * 100 - 20 + "px");
             }
         };
         Scene.prototype.setAIperson = function () { };
@@ -258,7 +283,6 @@ define(["require", "exports", "./person", "../viewScene", "./person_collection",
                             tmp = {};
                         });
                     });
-                    console.log("!!!!!!!!!!!!!!!!!!!!", cache_skins);
                     _this.person_collection.collection.forEach(function (elem) {
                         var img = _this.loader.get(elem.person.url);
                         var cnvsElem = document.createElement("canvas");
@@ -270,7 +294,6 @@ define(["require", "exports", "./person", "../viewScene", "./person_collection",
                         console.log("cnvsElem", cnvsElem);
                         elem.initDomPerson(cnvsElem);
                         cache_skins.forEach(function (skin) {
-                            console.log("dtagon", elem, skin);
                             var dragon = new dragon_1.DragonAnimationUpdate(_this.loader.get(skin.src_json), skin.cahce_image, skin.name, elem);
                             dragon.updateCanvas(elem.domPerson);
                             if (skin.name == "default_perosn1") {
@@ -292,7 +315,6 @@ define(["require", "exports", "./person", "../viewScene", "./person_collection",
             this.loader.load(person_collection);
             if (!load) {
                 load = true;
-                console.log("HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEE11111111111111", person_collection.getCollection());
                 this.config_skins.forEach(function (skin) {
                     skin.children.forEach(function (elem) {
                         tmp.cahce_image = [];
@@ -311,14 +333,11 @@ define(["require", "exports", "./person", "../viewScene", "./person_collection",
                     var cnvsElem = document.createElement("canvas");
                     cnvsElem = _this.view.renderPlayer(cnvsElem, elem, img);
                     cnvsElem.onclick = _this.onChangePerson;
-                    console.log("cnvsElem", cnvsElem);
                     elem.initDomPerson(cnvsElem);
-                    console.log("HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEE22222222222222222222222222222", cache_skins);
                     if (elem.person.id == _this.id_curent_user) {
                         cnvsElem.classList.add("curent_user");
                     }
                     cache_skins.forEach(function (skin) {
-                        console.log("dtagon", elem, skin);
                         var dragon = new dragon_1.DragonAnimationUpdate(_this.loader.get(skin.src_json), skin.cahce_image, skin.name, elem);
                         dragon.updateCanvas(elem.domPerson);
                         if (skin.name == "default_perosn1") {

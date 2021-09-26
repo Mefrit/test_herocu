@@ -4,10 +4,10 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.5); /* цвет фона */
+    background: rgba(0, 0, 0, 0.5); /* цвет фона */
     z-index: 1050;
     opacity: 0; /* по умолчанию модальное окно прозрачно */
-    -webkit-transition: opacity 200ms ease-in; 
+    -webkit-transition: opacity 200ms ease-in;
     -moz-transition: opacity 200ms ease-in;
     transition: opacity 200ms ease-in; /* анимация перехода */
     pointer-events: none; /* элемент невидим для событий мыши */
@@ -17,7 +17,7 @@
 /* при отображении модального окно */
 .modal:target {
     opacity: 1; /* делаем окно видимым */
-	  pointer-events: auto; /* элемент видим для событий мыши */
+    pointer-events: auto; /* элемент видим для событий мыши */
     overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
 }
 /* ширина модального окна и его отступы от экрана */
@@ -27,12 +27,12 @@
     margin: 10px;
 }
 @media (min-width: 576px) {
-  .modal-dialog {
-      max-width: 500px;
-      margin: 30px auto; /* для отображения модального окна по центру */
-  }
+    .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto; /* для отображения модального окна по центру */
+    }
 }
-/* свойства для блока, содержащего контент модального окна */ 
+/* свойства для блока, содержащего контент модального окна */
 .modal-content {
     position: relative;
     display: -webkit-box;
@@ -47,15 +47,22 @@
     background-color: #fff;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: .3rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
     outline: 0;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 10px;
+        flex-direction: row;
+    }
 }
 @media (min-width: 768px) {
-  .modal-content {
-      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-      box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  }
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
 }
 /* свойства для заголовка модального окна */
 .modal-header {
@@ -90,19 +97,20 @@
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
-    opacity: .5;
+    opacity: 0.5;
     text-decoration: none;
 }
 /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
-.close:focus, .close:hover {
+.close:focus,
+.close:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-    opacity: .75;
+    opacity: 0.75;
 }
 /* свойства для блока, содержащего основное содержимое окна */
 .modal-body {
-  position: relative;
+    position: relative;
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;

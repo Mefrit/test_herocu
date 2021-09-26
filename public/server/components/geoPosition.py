@@ -46,11 +46,10 @@ class Module_GeoPosition:
 
     def getCoordOnlineUsers(self):
         cursor = self.db.cursor()
-        query = """ SELECT id_user,x,y,skin FROM users WHERE online = 1   """ 
+        query = """ SELECT id_user,x,y,skin,nick FROM users WHERE online = 1   """ 
         cursor.execute(query)
         online_users = cursor.fetchall()
-        print("\n\n\n\n")
-        print(online_users)
+    
         return online_users
     def actionGetAllUsers(self, obj,data):
         # какой то неведомый 3й аргумент****

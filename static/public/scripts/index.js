@@ -18,7 +18,7 @@ define(["require", "exports", "react", "react-dom", "./modules_main_game/loader"
     ];
     var arrFurniture = [
         {
-            url: "./static/src/images/table.png",
+            url: "./static/src/images/table2.png",
             x: 11,
             y: 1,
             id: 0,
@@ -46,65 +46,65 @@ define(["require", "exports", "react", "react-dom", "./modules_main_game/loader"
             type: "table",
         },
         {
-            url: "./static/src/images/table.png",
-            x: 10,
+            url: "./static/src/images/table2.png",
+            x: 13,
             y: 1,
             id: 42,
             type: "table",
         },
         {
-            url: "./static/src/images/table.png",
+            url: "./static/src/images/table2.png",
             x: 0,
             y: 6,
             id: 5,
             type: "table",
         },
         {
-            url: "./static/src/images/table.png",
+            url: "./static/src/images/table2.png",
             x: 0,
             y: 9,
             id: 1,
             type: "table",
         },
         {
-            url: "./static/src/images/table.png",
+            url: "./static/src/images/table2.png",
             x: 2,
             y: 6,
             id: 5,
             type: "table",
         },
         {
-            url: "./static/src/images/table.png",
+            url: "./static/src/images/table2.png",
             x: 2,
             y: 9,
             id: 1,
             type: "table",
         },
         {
-            url: "./static/src/images/table.png",
+            url: "./static/src/images/divan-abort.png",
             x: 5,
-            y: 6,
+            y: 5,
             id: 1,
             type: "table",
         },
         {
-            url: "./static/src/images/table.png",
+            url: "./static/src/images/divan.png",
             x: 5,
             y: 2,
             id: 1,
-            type: "table",
+            type: "wall",
         },
         {
-            url: "./static/src/images/table.png",
+            url: "./static/src/images/divan.png",
             x: 6,
             y: 2,
             id: 1,
-            type: "table",
+            type: "wall",
         },
         {
-            url: "./static/src/images/table.png",
+            url: "./static/src/images/divan-abort.png",
             x: 6,
-            y: 6,
+            y: 5,
             id: 1,
             type: "table",
         },
@@ -284,28 +284,42 @@ define(["require", "exports", "react", "react-dom", "./modules_main_game/loader"
             type: "game",
         },
         {
-            url: "./static/src/images/desck.png",
+            url: "./static/src/images/game_22.jpg",
+            x: 12,
+            y: 5,
+            id: 3,
+            type: "game",
+        },
+        {
+            url: "./static/src/images/game_21.jpg",
+            x: 12,
+            y: 4,
+            id: 3,
+            type: "game",
+        },
+        {
+            url: "./static/src/images/desck1.png",
             x: 4,
             y: 0,
             id: 3,
             type: "desck",
         },
         {
-            url: "./static/src/images/desck.png",
+            url: "./static/src/images/desck2.png",
             x: 5,
             y: 0,
             id: 3,
             type: "desck",
         },
         {
-            url: "./static/src/images/desck.png",
+            url: "./static/src/images/desck3.png",
             x: 6,
             y: 0,
             id: 3,
             type: "desck",
         },
         {
-            url: "./static/src/images/desck.png",
+            url: "./static/src/images/desck4.png",
             x: 7,
             y: 0,
             id: 3,
@@ -331,7 +345,74 @@ define(["require", "exports", "react", "react-dom", "./modules_main_game/loader"
                     name: "default_perosn1",
                     class: "woman",
                     scale: 0.4
-                }
+                },
+                {
+                    src_json: "/static/src/images/dragon/GameAnim_ske.json",
+                    src_images: [
+                        { name: "body", path: "../static/src/images/dragon/person1/body.png" },
+                        { name: "left_arm_1", path: "../static/src/images/dragon/person1/left_arm_1.png" },
+                        { name: "left_arm_2", path: "../static/src/images/dragon/person1/left_arm_2.png" },
+                        { name: "left_leg_1", path: "../static/src/images/dragon/person1/left_leg_1.png" },
+                        { name: "left_leg_2", path: "../static/src/images/dragon/person1/left_leg_2.png" },
+                        { name: "right_arm_1", path: "../static/src/images/dragon/person1/right_arm_1.png" },
+                        { name: "right_arm_2", path: "../static/src/images/dragon/person1/right_arm_2.png" },
+                        { name: "right_leg_1", path: "../static/src/images/dragon/person1/right_leg_1.png" },
+                        { name: "right_leg_2", path: "../static/src/images/dragon/person1/right_leg_2.png" }
+                    ],
+                    name: "funny_perosn1",
+                    class: "woman",
+                    scale: 0.4
+                }, {
+                    src_json: "/static/src/images/dragon/WalkedAnim_ske.json",
+                    src_images: [
+                        { name: "body", path: "../static/src/images/dragon/person1/body.png" },
+                        { name: "left_arm_1", path: "../static/src/images/dragon/person1/left_arm_1.png" },
+                        { name: "left_arm_2", path: "../static/src/images/dragon/person1/left_arm_2.png" },
+                        { name: "left_leg_1", path: "../static/src/images/dragon/person1/left_leg_1.png" },
+                        { name: "left_leg_2", path: "../static/src/images/dragon/person1/left_leg_2.png" },
+                        { name: "right_arm_1", path: "../static/src/images/dragon/person1/right_arm_1.png" },
+                        { name: "right_arm_2", path: "../static/src/images/dragon/person1/right_arm_2.png" },
+                        { name: "right_leg_1", path: "../static/src/images/dragon/person1/right_leg_1.png" },
+                        { name: "right_leg_2", path: "../static/src/images/dragon/person1/right_leg_2.png" }
+                    ],
+                    name: "walking_perosn1",
+                    class: "woman",
+                    scale: 0.4
+                },
+                {
+                    src_json: "/static/src/images/dragon/EatingAnim_ske.json",
+                    src_images: [
+                        { name: "body", path: "../static/src/images/dragon/person1/body.png" },
+                        { name: "left_arm_1", path: "../static/src/images/dragon/person1/left_arm_1.png" },
+                        { name: "left_arm_2", path: "../static/src/images/dragon/person1/left_arm_2.png" },
+                        { name: "left_leg_1", path: "../static/src/images/dragon/person1/left_leg_1.png" },
+                        { name: "left_leg_2", path: "../static/src/images/dragon/person1/left_leg_2.png" },
+                        { name: "right_arm_1", path: "../static/src/images/dragon/person1/right_arm_1.png" },
+                        { name: "right_arm_2", path: "../static/src/images/dragon/person1/right_arm_2.png" },
+                        { name: "right_leg_1", path: "../static/src/images/dragon/person1/right_leg_1.png" },
+                        { name: "right_leg_2", path: "../static/src/images/dragon/person1/right_leg_2.png" }
+                    ],
+                    name: "eating_perosn1",
+                    class: "woman",
+                    scale: 0.4
+                },
+                {
+                    src_json: "/static/src/images/dragon/WriteAnim_ske.json",
+                    src_images: [
+                        { name: "body", path: "../static/src/images/dragon/person1/body.png" },
+                        { name: "left_arm_1", path: "../static/src/images/dragon/person1/left_arm_1.png" },
+                        { name: "left_arm_2", path: "../static/src/images/dragon/person1/left_arm_2.png" },
+                        { name: "left_leg_1", path: "../static/src/images/dragon/person1/left_leg_1.png" },
+                        { name: "left_leg_2", path: "../static/src/images/dragon/person1/left_leg_2.png" },
+                        { name: "right_arm_1", path: "../static/src/images/dragon/person1/right_arm_1.png" },
+                        { name: "right_arm_2", path: "../static/src/images/dragon/person1/right_arm_2.png" },
+                        { name: "right_leg_1", path: "../static/src/images/dragon/person1/right_leg_1.png" },
+                        { name: "right_leg_2", path: "../static/src/images/dragon/person1/right_leg_2.png" }
+                    ],
+                    name: "work_perosn1",
+                    class: "woman",
+                    scale: 0.4
+                },
             ]
         }
     ];
@@ -342,6 +423,8 @@ define(["require", "exports", "react", "react-dom", "./modules_main_game/loader"
             var _this = this;
             this.loadScene = function (arrPersons, id_curent_user) {
                 if (!_this.load) {
+                    var scene = document.getElementById('scene');
+                    scene.style.opacity = "1";
                     _this.load = true;
                     console.log("id_curent_user", id_curent_user);
                     _this.scene = new scene_1.Scene(_this.loader, arrPersons, _this.config_skins, _this.arrFurniture, id_curent_user);

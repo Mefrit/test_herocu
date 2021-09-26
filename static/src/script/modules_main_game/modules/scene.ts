@@ -68,20 +68,7 @@ export class Scene {
         if (this.canvas != undefined) {
             posX = Math.abs(parseInt(this.canvas.style.left.split("px")[0]) - this.getCoordFromStyle(block.style.left));
             posY = Math.abs(parseInt(this.canvas.style.top.split("px")[0]) - this.getCoordFromStyle(block.style.top));
-            // let coord_block = document.createElement("h1");
-            // coord_block.innerText = "x:" + block.style.left + " y:" + block.style.top;
-            // document.getElementById("block_information").innerHTML =
-            //     "<h1>x:" +
-            //     this.getCoordFromStyle(block.style.left) / 120 +
-            //     " y:" +
-            //     this.getCoordFromStyle(block.style.top) / 120 +
-            //     "</h1>";
-
-            // if (posX < 290 && posY < 290) {
             block.classList.add("block__free");
-            // } else {
-            //     block.classList.add("block__nonFree");
-            // }
         }
     };
     syncUnit = (data) => {
@@ -103,12 +90,6 @@ export class Scene {
             .then((data) => data.json())
             .then((result) => {
                 if (result.status == "ok") {
-                    // console.log(result.friends_list);
-                    // this.setState({
-                    //     friends_list: result.friends_list,
-                    // });
-                    // console.log("GetAllUsers!!!!!!! ", arrPersons);
-                    // this.props.loadScene(arrPersons, this.state.id_curent_user);
                 } else {
                     alert("ERROR " + result.message);
                 }
@@ -126,6 +107,15 @@ export class Scene {
                 parseInt(posY.split("px")) / 100,
                 this.id_curent_user
             );
+            console.log(curent_unit);
+
+            curent_unit.stopAnimation("default_perosn1");
+            curent_unit.playAnimation("walking_perosn1");
+            setTimeout(() => {
+                curent_unit.stopAnimation("walking_perosn1");
+                curent_unit.playAnimation("default_perosn1");
+            }, 1500);
+
             this.movePersonByCoord(this.canvas, posX, posY);
         } else {
             alert("AnotherUser  " + curent_unit.person.id + "   " + this.id_curent_user);
@@ -146,7 +136,7 @@ export class Scene {
         canvas.style.top = parseInt(posY.split("px")[0]) - 60 + "px";
         // this.canvas.style.top = posY;
         // this.canvas.style.transition = "transform 500ms ease-out 100s";
-        canvas.style.transition = "0.5s";
+        canvas.style.transition = "1.6s";
 
         activePerson = this.person_collection.getCollection().filter((elem: any) => {
             if (elem.getId() == canvas.getAttribute("data-id")) {
@@ -196,7 +186,6 @@ export class Scene {
                         is_furniture = true;
 
                         block.addEventListener("click", () => {
-                            // console.log(element);
                             if (element.furniture.type == "table") {
                                 block.classList.add("sence__block-table");
                                 curent_unit = this.getActivePerson(this.canvas)[0];
@@ -249,10 +238,16 @@ export class Scene {
         if (curent_unit.person.id == this.id_curent_user) {
             this.setCoord2Server(table.x, table.y, this.id_curent_user);
 
-            this.movePersonByCoord(curent_unit.domPerson, table.x * 100 + "px", table.y * 100 + 60 + "px");
+            this.movePersonByCoord(curent_unit.domPerson, table.x * 100 + "px", (table.y + 1) * 100 + "px");
         }
     }
     workGameAction(curent_unit, table) {
+        curent_unit.stopAnimation("default_perosn1");
+        curent_unit.playAnimation("walking_perosn1");
+        setTimeout(() => {
+            curent_unit.stopAnimation("walking_perosn1");
+            curent_unit.playAnimation("funny_perosn1");
+        }, 2000);
         if (curent_unit.person.id == this.id_curent_user) {
             this.setCoord2Server(table.x, table.y, this.id_curent_user);
             let mini_game = new MiniGame();
@@ -260,6 +255,12 @@ export class Scene {
         }
     }
     workKitchenAction(curent_unit, table) {
+        curent_unit.stopAnimation("default_perosn1");
+        curent_unit.playAnimation("walking_perosn1");
+        setTimeout(() => {
+            curent_unit.stopAnimation("walking_perosn1");
+            curent_unit.playAnimation("eating_perosn1");
+        }, 2000);
         if (curent_unit.person.id == this.id_curent_user) {
             this.setCoord2Server(table.x, table.y, this.id_curent_user);
 
@@ -267,11 +268,18 @@ export class Scene {
         }
     }
     workTableAction(curent_unit, table) {
+        curent_unit.stopAnimation("default_perosn1");
+        curent_unit.playAnimation("walking_perosn1");
+        setTimeout(() => {
+            curent_unit.stopAnimation("walking_perosn1");
+            curent_unit.playAnimation("work_perosn1");
+        }, 2000);
+
         let posX = table.x;
         if (curent_unit.person.id == this.id_curent_user) {
             this.setCoord2Server(table.x, table.y, this.id_curent_user);
 
-            this.movePersonByCoord(curent_unit.domPerson, posX * 100 + "px", table.y * 100 - 15 + "px");
+            this.movePersonByCoord(curent_unit.domPerson, posX * 100 + "px", table.y * 100 - 20 + "px");
         }
     }
     setAIperson() {}
@@ -319,7 +327,7 @@ export class Scene {
                         tmp = {};
                     });
                 });
-                console.log("!!!!!!!!!!!!!!!!!!!!", cache_skins);
+
                 this.person_collection.collection.forEach((elem: any) => {
                     let img = this.loader.get(elem.person.url);
                     let cnvsElem = document.createElement("canvas");
@@ -351,7 +359,7 @@ export class Scene {
                         //         elem.setAnimation(skin.name, dragon);
                         //     }
                         // } else {
-                        console.log("dtagon", elem, skin);
+
                         var dragon = new DragonAnimationUpdate(
                             this.loader.get(skin.src_json),
                             skin.cahce_image,
@@ -409,7 +417,7 @@ export class Scene {
         // this.loadDragon();
         if (!load) {
             load = true;
-            console.log("HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEE11111111111111", person_collection.getCollection());
+
             this.config_skins.forEach((skin) => {
                 skin.children.forEach((elem) => {
                     // this.loader.loadJSON(elem.src_json);
@@ -434,15 +442,13 @@ export class Scene {
 
                 cnvsElem.onclick = this.onChangePerson;
 
-                console.log("cnvsElem", cnvsElem);
                 elem.initDomPerson(cnvsElem);
-                console.log("HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEE22222222222222222222222222222", cache_skins);
+
                 if (elem.person.id == this.id_curent_user) {
                     cnvsElem.classList.add("curent_user");
                 }
                 // когда будем делать графику будет сложнее, тк от этого аподхода придется избавиться
                 cache_skins.forEach((skin: any) => {
-                    console.log("dtagon", elem, skin);
                     var dragon = new DragonAnimationUpdate(
                         this.loader.get(skin.src_json),
                         skin.cahce_image,
@@ -496,16 +502,12 @@ export class Scene {
     // };
     onChangePerson = (event) => {
         let canvas = event.target;
-
         if (this.canvas != undefined) {
             this.view.clearPrev(this.canvas, this.loader);
         }
         this.chosePerson = true;
-
         this.view.changePersonView(canvas, this.loader);
-
         this.canvas = canvas;
-
         this.view.showAvailabeMovies(this.canvas);
     };
     renderAiPerson() {}

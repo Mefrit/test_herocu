@@ -121,6 +121,7 @@
     &__task-container {
         height: 300px;
         overflow: auto;
+        padding: 5px;
     }
 }
 .interface {
@@ -130,28 +131,40 @@
     margin-top: 10px;
     padding: 10px;
     display: flex;
+    background-color: rgb(199, 199, 199);
     flex-direction: column;
     &__taskInfo {
         display: flex;
         flex-direction: row;
+    }
+    &__description-container {
+        display: flex;
+        flex-direction: column;
     }
     &__description {
         margin-top: 10px;
         height: 70px;
     }
-    &__taskInfo {
-        display: flex;
-        flex-direction: row;
+    &__btn-add {
+        padding: 10px;
     }
 }
 .task {
     display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    margin-left: 5px;
     flex-direction: column;
     &__info {
         display: flex;
+        justify-content: space-around;
         flex-direction: row;
     }
     &__description {
-        width: 100%;
+        width: 90%;
+        display: flex;
+        margin-left: 10px;
     }
 }

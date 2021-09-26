@@ -49,7 +49,6 @@ define(["require", "exports", "react", "./tools", "./chat"], function (require, 
                 })
                     .then(function (data) { return data.json(); })
                     .then(function (result) {
-                    console.log("result from server openDialog", result);
                     if (result.status == "ok") {
                         clearInterval(_this.interfal_dialog);
                         _this.setState({
@@ -60,7 +59,7 @@ define(["require", "exports", "react", "./tools", "./chat"], function (require, 
                         });
                         _this.interfal_dialog = setInterval(function () {
                             _this.openDialog(id_sent, nick_interlocutor);
-                        }, 3000000);
+                        }, 3000);
                     }
                     else {
                         alert(result.message);
@@ -160,7 +159,7 @@ define(["require", "exports", "react", "./tools", "./chat"], function (require, 
             this.getHistory();
             setInterval(function () {
                 _this.getHistory();
-            }, 8000);
+            }, 5500);
             setInterval(function () {
                 _this.getInf();
             }, 2000);

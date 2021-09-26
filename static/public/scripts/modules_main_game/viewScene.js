@@ -17,6 +17,7 @@ define(["require", "exports"], function (require, exports) {
                     cnvsElem.classList.add("players");
                 }
                 cnvsElem.setAttribute("data-image", elem.person.url);
+                cnvsElem.setAttribute("title", elem.person.nick);
                 cnvsElem.setAttribute("data-id", elem.person.id);
                 cnvsElem.style.top = elem.y * 100 - 60 + "px";
                 cnvsElem.style.left = elem.x * 100 - 30 + "px";

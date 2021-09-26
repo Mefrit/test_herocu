@@ -18,16 +18,67 @@ class DesckBoardReact extends React.Component<any, any> {
         modal.classList.remove("open_modal");
     }
     componentDidMount() {
-        this.setState({ task: [] });
+        fetch("/?module=DeskBoard&action=GetRecord", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify({ title: this.state.title, description: this.state.description, owner: this.state.owner }),
+        })
+            .then((data) => data.json())
+            .then((result) => {
+                console.log("GetRecord!!!!!!!!!!! ", result);
+                if (result.status == "ok") {
+                    //сообщение что успешно все отправлено
+                    let tasks = result.tasks.map(elem => {
+                        return {
+                            id: elem[0],
+                            owner: elem[1],
+                            title: elem[2],
+                            description: elem[3]
+                        }
+                    })
+                    this.setState({ task: tasks });
+                } else {
+                    alert(result.message);
+                }
+            });
+
+    }
+    deleteTask = (id) => {
+        fetch("/?module=DeskBoard&action=DeleteRecord", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify({ id_record_delete: id }),
+        })
+            .then((data) => data.json())
+            .then((result) => {
+                console.log("GetRecord!!!!!!!!!!! ", result);
+                if (result.status == "ok") {
+                    //сообщение что успешно все отправлено
+                    let tasks = this.state.task.filter(elem => {
+                        if (elem.id != id) {
+                            return elem;
+                        }
+                    })
+                    this.setState({ task: tasks });
+                } else {
+                    alert(result.message);
+                }
+            });
+
     }
     rendertask() {
+        console.log("this.state.task", this.state.task)
         return this.state.task.map(elem => {
 
             return <div className="task">
                 <div className="task__info">
                     <span className="modal-content__owner">Кому - {elem.owner}</span>
                     <span className="modal-content__title">Название -{elem.title}</span>
-                    <input type="button" value="x" />
+                    <input type="button" onClick={() => { this.deleteTask(elem.id) }} value="x" />
                 </div>
                 <span>Описание</span>
                 <p className="task__description">
@@ -40,13 +91,31 @@ class DesckBoardReact extends React.Component<any, any> {
     }
     addTask = () => {
         let task = this.state.task;
-        task.push({ title: this.state.title, description: this.state.description, owner: this.state.owner });
-        this.setState({
-            task: task,
-            owner: '',
-            title: '',
-            description: ''
-        });
+
+        fetch("/?module=DeskBoard&action=AddRecord", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify({ title: this.state.title, description: this.state.description, owner: this.state.owner }),
+        })
+            .then((data) => data.json())
+            .then((result) => {
+                console.log("result from server sentMessage", result);
+                if (result.status == "ok") {
+                    //сообщение что успешно все отправлено
+                    task.push({ title: this.state.title, description: this.state.description, owner: this.state.owner, id: result.id_record });
+                    this.setState({
+                        task: task,
+                        owner: '',
+                        title: '',
+                        description: ''
+                    });
+                } else {
+                    alert(result.message);
+                }
+            });
+
     }
     changeOwner = (ev) => {
         this.setState({
@@ -66,22 +135,25 @@ class DesckBoardReact extends React.Component<any, any> {
     renderInterface() {
         return <div className="interface">
             <div className="interface__taskInfo">
-                <label>Предать задачу: <input type="text" onChange={this.changeOwner} className="interface__owner" /></label>
-                <label>название задачи: <input type="text" onChange={this.changeTitle} className="interface__owner" /></label>
+                <label>Предать задачу: <input type="text" value={this.state.owner} onChange={this.changeOwner} className="interface__owner" /></label>
+                <label>Название задачи: <input type="text" value={this.state.title} onChange={this.changeTitle} className="interface__owner" /></label>
 
             </div>
-            <label  >
+            <label className="interface__description-container" >
                 Описание  задачи
-                <textarea className="interface__description" onChange={this.changeDescription} id="" ></textarea>
+                <textarea value={this.state.description} className="interface__description" onChange={this.changeDescription} id="" ></textarea>
             </label>
 
-            <input type="button" onClick={this.addTask} value="Добавить задачу" />
+            <input type="button" onClick={this.addTask} className="interface__btn-add" value="Добавить задачу" />
         </div>
     }
     render() {
         return <div className="modal-content">
-            <h3>Задачи</h3>
-            <input type="button" className="modal-content__cancel" onClick={this.close} value="x" />
+            <div className="modal-content__header">
+                <h3>Задачи</h3>
+                <input type="button" className="modal-content__cancel" onClick={this.close} value="x" />
+            </div>
+
             <div className="modal-content__task-container">{this.rendertask()}</div>
             <div className={"modal-content__interactive"}>
                 {this.renderInterface()}

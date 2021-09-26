@@ -3,6 +3,7 @@ from public.server.components.registration import Module_registration
 from public.server.components.tools import Module_tools  
 from public.server.components.dialog import Module_dialog 
 from public.server.components.geoPosition import Module_GeoPosition
+from public.server.components.deskBoard import Module_DeskBoard
 # from public.server.components.
 class Server :
     def __init__(self,path2db):
@@ -22,8 +23,9 @@ class Server :
         if module_name == "dialog":
             return Module_dialog(conf)
         if module_name == "GeoPosition":
-            print(conf)
             return Module_GeoPosition(conf)
+        if module_name == "DeskBoard":
+            return Module_DeskBoard(conf)
 
     def getAnswerFromComponent(self, conf):
         obj = self.getModule(self,conf["module"])

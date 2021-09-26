@@ -75,7 +75,7 @@ export class Scene extends React.Component<sceneProps, sceneState> {
 
         setInterval(() => {
             this.getHistory();
-        }, 8000);
+        }, 5500);
         setInterval(() => {
             this.getInf();
         }, 2000);
@@ -91,7 +91,7 @@ export class Scene extends React.Component<sceneProps, sceneState> {
         })
             .then((data) => data.json())
             .then((result) => {
-                console.log("result from server openDialog", result);
+
                 if (result.status == "ok") {
                     clearInterval(this.interfal_dialog);
                     this.setState({
@@ -102,7 +102,7 @@ export class Scene extends React.Component<sceneProps, sceneState> {
                     });
                     this.interfal_dialog = setInterval(() => {
                         this.openDialog(id_sent, nick_interlocutor);
-                    }, 3000000);
+                    }, 3000);
                 } else {
                     alert(result.message);
                 }

@@ -65,6 +65,7 @@ define(["require", "exports", "react", "./components/registration", "./component
                             tmp.x = elem[1];
                         }
                         tmp.id = elem[0];
+                        tmp.nick = elem[4];
                         return tmp;
                     });
                     console.log("GetAllUsers!!!!!!! ", arrPersons);
@@ -89,7 +90,7 @@ define(["require", "exports", "react", "./components/registration", "./component
                 this.loadScene(false);
                 setInterval(function () {
                     _this.loadScene(true);
-                }, 3000);
+                }, 2000);
             }
             return (React.createElement("div", { className: "container" }, this.state.enter ? (React.createElement(scene_1.Scene, { id_curent_user: this.state.id_curent_user })) : (React.createElement(registration_1.RegistrationComponent, { setEnter: this.setEnter }))));
         };
