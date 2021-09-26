@@ -62,8 +62,8 @@
         "affectsGlobalScope": false
       },
       "../../src/script/modules_main_game/modules/person_collection.ts": {
-        "version": "bd467d1d7c126bbce5b7545de1788fa7be09fe137f8f225fcff3f2f575c11650",
-        "signature": "dc1ef287bdbcfd15b2548c92011a8957298bba55686e104579d05f7d06b6edcd",
+        "version": "7840619c0eea57a3d7108cddea15186f546443e3e0aadd9b79b74edf5a2d8bbc",
+        "signature": "4a84a220af3ad358a47339f64bd4c6b262fd281a9ccb80fc94a2231e2b6e87fb",
         "affectsGlobalScope": false
       },
       "../../node_modules/@types/react/global.d.ts": {
@@ -142,7 +142,7 @@
         "affectsGlobalScope": false
       },
       "../../src/script/modules_messenger/messenger.tsx": {
-        "version": "d7cfa9360ed2dc1cc39a42257c5af712a8ab3f3eed6f3f725a1af84364cb7f49",
+        "version": "60b4451a856341ec0b2bd7bc07ca3e984b6b9860b2e746c95a9943cacc24dff8",
         "signature": "eaa7d2e31f792886bf553782c29a7ffe67cb3dca6026a62d13fec648c4736cb4",
         "affectsGlobalScope": false
       },

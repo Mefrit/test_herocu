@@ -21,10 +21,7 @@ export class Collection {
         let res = true;
         this.collection.forEach((element) => {
             if (element.x == coord.x && element.y == coord.y) {
-                if (!element.isNotDied()) {
-                    // console.log("element isNotDied", element);
-                    res = false;
-                }
+                res = false;
             }
         });
         return res;
@@ -33,13 +30,6 @@ export class Collection {
     getPersonById(id) {
         return this.collection.filter((elem) => {
             if (!elem.isNotDied() && elem.person.id == id) {
-                return elem;
-            }
-        });
-    }
-    getAiArchers() {
-        return this.collection.filter((elem) => {
-            if (elem.person.evil && elem.person.class == "archer") {
                 return elem;
             }
         });

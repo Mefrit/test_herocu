@@ -35,10 +35,6 @@ export class App extends React.Component<any, any> {
             .then((data) => data.json())
             .then((result) => {
                 if (result.status == "ok") {
-                    // console.log(result.friends_list);
-                    // this.setState({
-                    //     friends_list: result.friends_list,
-                    // });
                     let arrPersons = result.online_users.map(elem => {
                         tmp = {};
                         tmp.url = './static/src/images/person1.png'

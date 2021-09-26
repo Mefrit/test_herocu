@@ -24,9 +24,7 @@ define(["require", "exports", "./person", ".//furniture"], function (require, ex
             var res = true;
             this.collection.forEach(function (element) {
                 if (element.x == coord.x && element.y == coord.y) {
-                    if (!element.isNotDied()) {
-                        res = false;
-                    }
+                    res = false;
                 }
             });
             return res;
@@ -34,13 +32,6 @@ define(["require", "exports", "./person", ".//furniture"], function (require, ex
         Collection.prototype.getPersonById = function (id) {
             return this.collection.filter(function (elem) {
                 if (!elem.isNotDied() && elem.person.id == id) {
-                    return elem;
-                }
-            });
-        };
-        Collection.prototype.getAiArchers = function () {
-            return this.collection.filter(function (elem) {
-                if (elem.person.evil && elem.person.class == "archer") {
                     return elem;
                 }
             });
